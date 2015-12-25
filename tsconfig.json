@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "system",
     "target": "es5",
     "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noLib": false
+    "noLib": false,
+    "moduleResolution": "node"
   },
   "exclude": [
       "node_modules"
