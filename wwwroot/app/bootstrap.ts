@@ -1,12 +1,14 @@
-import * as ng from 'angular2/angular2';
-import * as router from 'angular2/router';
+import { FormBuilder } from 'angular2/common';
+import { ROUTER_PROVIDERS} from 'angular2/router';
 import { Http, HTTP_BINDINGS } from 'angular2/http';
 import { App } from './app';
-import { PeopleService } from './people/people.service'
+import { PeopleService } from './people/people.service';
+import {bootstrap} from 'angular2/platform/browser'
 
-ng.bootstrap(App, [
-    router.ROUTER_PROVIDERS,
+
+bootstrap(App, [
+    ROUTER_PROVIDERS,
     HTTP_BINDINGS,
-    ng.FormBuilder,
+    FormBuilder,
     PeopleService
     ]);

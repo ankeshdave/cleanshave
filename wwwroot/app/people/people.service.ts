@@ -1,5 +1,5 @@
 import {Http} from 'angular2/http';
-import {Injectable} from 'angular2/angular2';
+import {Injectable} from 'angular2/core';
 import {Person} from '../core/Person';
 
 /**
@@ -15,9 +15,9 @@ export class PeopleService {
     getPeople() {
         //return an observable
         return this._http.get('/api/people')
-            .catch((err) => {
+            .catch((err,source,caught) => {
                 console.log(err);
-                return [];
+                return source;
             })
             .map((response) => {
                 return response.json();
@@ -27,7 +27,7 @@ export class PeopleService {
 
                 if (people) {
                     people.forEach((p) => {
-                        result.push(p)
+                        result.push(p);
                     });
                 }
                 return result;
@@ -53,6 +53,5 @@ export class PeopleService {
         console.error(error);
         return Promise.reject(error);
     }
-
 
 }

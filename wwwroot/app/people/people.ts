@@ -1,4 +1,5 @@
-import {Component, CORE_DIRECTIVES, OnInit} from 'angular2/angular2';
+import {Component, OnInit} from 'angular2/core';
+import {CORE_DIRECTIVES} from 'angular2/common';
 import {PeopleService} from './people.service';
 import {Person} from '../core/person';
 

@@ -14,8 +14,14 @@
     <script src="~/lib/angular2/bundles/router.dev.js"></script>
     <script src="~/lib/angular2/bundles/http.dev.js"></script>
     <script>
-        System.config({
-            packages: {'app': {defaultExtension: 'js'}}
+        System.config(
+        {
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
         });
         System.import('./app/bootstrap').catch(console.log.bind(console));
     </script>
