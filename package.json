@@ -24,8 +24,8 @@
     "gulp-typescript": "^2.9.0",
     "typescript": "^1.6.2"
    },
-   "scripts": {
-     "tsc" : "tsc -p . -w",
-     "start" : "gulp build-dev && nodemon --ignore htm,html --ext cs,js --exec \"dnx web\" -V"
-   }
+  "scripts": {
+    "tsc": "tsc  -p . -w",
+    "start": "gulp build-dev && nodemon --ignore htm,html --ext cs,js --exec \"dnx web\" -V"
+  }
 }
