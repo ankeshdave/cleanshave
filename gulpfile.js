@@ -34,8 +34,9 @@ var config = {
 };
 
 gulp.task('build.lib', function () {
-    return gulp.src(config.lib, { base: config.libBase })
+    gulp.src(config.lib, { base: config.libBase })
         .pipe(gulp.dest(webroot + 'lib'));
+    return gulp.src(['./node_modules/**/*']).pipe(gulp.dest(webroot + 'lib'));
 });
 
 gulp.task('build-prod', ['build.lib'], function () {
