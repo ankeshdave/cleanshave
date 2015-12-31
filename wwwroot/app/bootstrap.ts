@@ -1,3 +1,4 @@
+import 'rxjs/Rx';
 import {bootstrap} from 'angular2/platform/browser';
 import { Component,enableProdMode } from 'angular2/core';
 import { FormBuilder } from 'angular2/common';

@@ -1,12 +1,14 @@
-import {Component, OnInit} from 'angular2/core';
-import {CORE_DIRECTIVES} from 'angular2/common';
+import {Component, OnInit,View} from 'angular2/core';
+import {COMMON_DIRECTIVES,NgFor,NgIf} from 'angular2/common';
 import {PeopleService} from './people.service';
 import {Person} from '../core/person';
 
 @Component({
-    selector: 'people',
+    selector: 'people'
+})
+@View({
     templateUrl: './app/people/people.html',
-    directives: [CORE_DIRECTIVES],
+    directives: [COMMON_DIRECTIVES]
 })
 export class People {
     public people: Array<Person>;

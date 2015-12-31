@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/common';
+import {COMMON_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/common';
 import {RouteParams, Router} from 'angular2/router';
 import {PeopleService} from './people.service';
 import {Person} from '../core/person';
@@ -7,7 +7,7 @@ import {Person} from '../core/person';
 @Component({
 	selector: 'person-detail',
 	templateUrl: './app/people/person.html',
-	directives: [CORE_DIRECTIVES, FORM_DIRECTIVES],
+	directives: [COMMON_DIRECTIVES, FORM_DIRECTIVES],
 	inputs: ['person']
 })
 export class PersonDetail{

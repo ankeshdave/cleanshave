@@ -34,9 +34,9 @@ var config = {
 };
 
 gulp.task('build.lib', function () {
-    gulp.src(config.lib, { base: config.libBase })
+    return gulp.src(config.lib, { base: config.libBase })
         .pipe(gulp.dest(webroot + 'lib'));
-    return gulp.src(['./node_modules/**/*']).pipe(gulp.dest(webroot + 'lib'));
+    //return gulp.src(['./node_modules/**/*']).pipe(gulp.dest(webroot + 'lib'));
 });
 
 gulp.task('build-prod', ['build.lib'], function () {
@@ -55,7 +55,8 @@ gulp.task('build-dev', ['build.lib'], function () {
 });
 
 gulp.task('clean', function () {
-    return del([webroot + 'lib']);
+    //return del([webroot + 'lib',webroot + '/app/**/*.js',webroot + '/app/**/*.js.map']);
+        return del([webroot + '/app/**/*.js',webroot + '/app/**/*.js.map']);
 });
 
 gulp.task('default', ['build-dev']);
