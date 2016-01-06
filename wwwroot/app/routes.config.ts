@@ -1,7 +1,7 @@
-import { Home } from './home/Home';
-import { About } from './about/About';
-import { People } from './people/People';
-import { PersonDetail } from './people/PersonDetail';
+import { Home } from './home/home';
+import { About } from './about/about';
+import { People } from './people/people';
+import { PersonDetail } from './people/persondetail';
 import { Route, Router } from 'angular2/router';
 
 export var Routes = {

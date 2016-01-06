@@ -1,7 +1,7 @@
 import {Component, OnInit,View} from 'angular2/core';
 import {COMMON_DIRECTIVES,NgFor,NgIf} from 'angular2/common';
-import {PeopleService} from './people.service';
 import {Person} from '../core/person';
+import {PeopleService} from './people.service';
 
 @Component({
     selector: 'people'

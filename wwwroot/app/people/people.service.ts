@@ -1,6 +1,6 @@
 import {Http} from 'angular2/http';
 import {Injectable} from 'angular2/core';
-import {Person} from '../core/Person';
+import {Person} from '../core/person';
 
 /**
  * people service

@@ -22,7 +22,7 @@
     "gulp-inline-ng2-template": "0.0.7",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.9.0",
-    "typescript": "^1.6.2"
+    "typescript": "^1.7.5"
    },
   "scripts": {
     "tsc": "tsc  -p . -w",
