@@ -1,5 +1,7 @@
 /node_modules/
 /wwwroot/lib/
+/wwwroot/app/**/*.js
+/wwwroot/app/**/*.map
 /wwwroot/ng-app/**/*.js
 /project.lock.json
 
